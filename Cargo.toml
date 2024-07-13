@@ -1,0 +1,18 @@
+[package]
+name = "server-time"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies] 
+chrono = "0.4"
+tokio = { version = "1.21", features = ["full"] }
+
+[build-dependencies]
+winres = "0.1.12"
+
+[package.metadata.winres]
+OriginalFilename = "server-time.exe"
+FileDescription = "Matriks Server Timer"
+LegalCopyright = "Copyright © 2022 - Matriks Bilgi Dağıtım"
